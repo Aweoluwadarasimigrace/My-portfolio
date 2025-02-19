@@ -111,12 +111,12 @@ button:hover::before {
 }
 
 @media (max-width: 919px) {
-  .img-wrapper {
-    display: none !important;
-  }
   .hero-section {
     height: 70vh;
     padding-top: 100px;
+  }
+  .hero-section .hero-img {
+    display: none !important;
   }
 }
 @media (max-width: 438px) {
@@ -275,19 +275,19 @@ button:hover::before {
     padding: 0;
     padding-right: 50px;
   }
-  .image-container img {
+  .second-section .image-container img {
     width: 300px;
   }
 }
 @media (max-width: 999px) {
-  .second-section-wrapper {
-    flex-direction: column;
-  }
   .second-section {
     padding-left: 30px;
   }
-  .image-container img {
+  .second-section .image-container img {
     display: none;
+  }
+  .second-section .second-section-wrapper {
+    flex-direction: column;
   }
 }
 .third-section {
@@ -677,4 +677,89 @@ button:hover::before {
     gap: 2em;
     padding: 30px;
   }
+}
+footer {
+  padding: 50px;
+  border-top: 2px solid #E32944;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+}
+footer .flex-items1 {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 1em;
+}
+footer .flex-img {
+  border-radius: 50%;
+  width: 90px;
+}
+footer .wrap-text {
+  padding-top: 12px;
+}
+footer .wrap-text h1 {
+  font-size: 32px;
+  color: #E32944;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+footer .wrap-text p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #797979;
+}
+footer .socials {
+  display: flex;
+  gap: 1em;
+}
+footer .socials a {
+  text-decoration: none;
+}
+footer .socials .fa-brands {
+  font-size: 25px;
+  color: black;
+}
+footer .second-footer-flex a {
+  text-decoration: none;
+}
+footer .second-footer-flex a h1 {
+  font-size: 37px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 10px;
+}
+footer .second-footer-flex a h1 .fa-solid {
+  color: #E32944;
+}
+footer .contact {
+  display: flex;
+  gap: 2em;
+}
+footer .contact p {
+  color: #414141;
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+footer .contact .underline {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  position: relative;
+}
+footer .underline::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  background-color: #797979;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease-in-out;
+}
+footer .underline:hover::after {
+  width: 100%;
+  background-color: #797979;
 }/*# sourceMappingURL=main.css.map */
