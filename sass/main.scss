@@ -772,8 +772,9 @@ button:hover::before {
 
 
 footer {
-    padding: 50px;
+    padding-top: 50px;
     border-top: 2px solid $bg-colour;
+    padding-bottom: 50px;
 
     .footer {
         display: flex;
@@ -843,7 +844,7 @@ footer {
 
     .contact {
         display: flex;
-        gap: 2em;
+        gap: 1em;
 
         p {
             color: $second-sect-h1-color;
@@ -887,6 +888,28 @@ footer {
             to {
             transform: translateX(10px);
             }
+        }
+    }
+}
+@media(max-width:990px){
+    footer{
+        padding-left:20px;
+        .footer{
+            flex-direction: column;
+        }
+        .second-footer-flex{
+            a{
+                h1{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:483px){
+    footer{
+        .contact{
+            flex-direction: column;
         }
     }
 }

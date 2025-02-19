@@ -679,8 +679,9 @@ button:hover::before {
   }
 }
 footer {
-  padding: 50px;
+  padding-top: 50px;
   border-top: 2px solid #E32944;
+  padding-bottom: 50px;
 }
 footer .footer {
   display: flex;
@@ -735,7 +736,7 @@ footer .second-footer-flex a h1 .fa-solid {
 }
 footer .contact {
   display: flex;
-  gap: 2em;
+  gap: 1em;
 }
 footer .contact p {
   color: #414141;
@@ -772,5 +773,22 @@ footer .fa-solid:hover {
   }
   to {
     transform: translateX(10px);
+  }
+}
+
+@media (max-width: 990px) {
+  footer {
+    padding-left: 20px;
+  }
+  footer .footer {
+    flex-direction: column;
+  }
+  footer .second-footer-flex a h1 {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 483px) {
+  footer .contact {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */
