@@ -13,6 +13,7 @@
 header {
     background-color: $bg-colour;
     padding: 20px 90px;
+
     div {
         display: flex;
         justify-content: space-between;
@@ -131,13 +132,14 @@ button:hover::before {
         height: 70vh;
         padding-top: 100px;
 
-        .hero-img{
+        .hero-img {
             display: none !important;
         }
     }
 }
-@media(max-width:438px){
-    .hero-section{
+
+@media(max-width:438px) {
+    .hero-section {
         padding-left: 20px;
     }
 }
@@ -399,19 +401,21 @@ button:hover::before {
     color: white;
 }
 
-@media(max-width:1024px){
+@media(max-width:1024px) {
     .thirdsect-flex {
         display: grid;
         grid-template-columns: repeat(1, 2fr);
         gap: 1em;
     }
-        .third-section{
-            padding-left: 20px;
-        }
+
+    .third-section {
+        padding-left: 20px;
+    }
 }
-@media(max-width:478px){
-    .third-section{
-          
+
+@media(max-width:478px) {
+    .third-section {
+
 
 
         .thirdsect-p {
@@ -420,7 +424,7 @@ button:hover::before {
             text-align: center;
             margin-bottom: 10px;
         }
-    
+
         .thirdsect-h1 {
             font-size: 20px;
             text-align: center;
@@ -639,191 +643,224 @@ button:hover::before {
 }
 
 
-.fifth-section{
+.fifth-section {
     padding-top: 100px;
     padding: 50px;
 
-    .past-education{
+    .past-education {
         text-align: center;
     }
-    .past-education-h1{
+
+    .past-education-h1 {
         font-size: 32px;
         color: $bg-colour;
         font-weight: 600;
     }
-    .school-grid{
+
+    .school-grid {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
         gap: 2em;
         padding: 50px;
     }
-    .sch{
+
+    .sch {
         border-right: 2px solid $bg-colour;
     }
-    .school-p1{
+
+    .school-p1 {
         font-size: 18px;
         font-weight: 600;
         color: $second-sect-color;
         margin-bottom: 7px;
     }
-    .school-p1 span{
+
+    .school-p1 span {
         font-size: 24px;
         font-weight: 900;
         color: $bg-colour;
     }
-    .school-h1{
+
+    .school-h1 {
         font-size: 32px;
         color: $bg-colour;
         font-weight: 600;
         margin-bottom: 7px;
     }
-    .school-p{
+
+    .school-p {
         font-size: 16px;
         font-weight: 400;
         color: black;
     }
 }
 
-@media(max-width:1024px){
-    .fifth-section{
+@media(max-width:1024px) {
+    .fifth-section {
         padding-top: 100px;
         padding: 50px;
-    
-        .past-education{
+
+        .past-education {
             text-align: center;
         }
-        .past-education-h1{
+
+        .past-education-h1 {
             font-size: 32px;
             color: $bg-colour;
             font-weight: 600;
         }
-        .school-grid{
+
+        .school-grid {
             display: grid;
             grid-template-columns: repeat(1, 2fr);
             gap: 2em;
             padding: 50px;
         }
-        .schools{
+
+        .schools {
             border-right: none;
             border-bottom: 2px solid $bg-colour;
             padding-bottom: 40px;
         }
-        .school-p1{
+
+        .school-p1 {
             font-size: 18px;
             font-weight: 600;
             color: $second-sect-color;
             margin-bottom: 7px;
         }
-        .school-p1 span{
+
+        .school-p1 span {
             font-size: 24px;
             font-weight: 900;
             color: $bg-colour;
         }
-        .school-h1{
+
+        .school-h1 {
             font-size: 32px;
             color: $bg-colour;
             font-weight: 600;
             margin-bottom: 7px;
         }
-        .school-p{
+
+        .school-p {
             font-size: 16px;
             font-weight: 400;
             color: black;
         }
     }
 }
-@media(max-width:672px){
-    .fifth-section{
+
+@media(max-width:672px) {
+    .fifth-section {
         padding: 100px 0 0 0;
-        .past-education-h1{
+
+        .past-education-h1 {
             font-size: 27px;
             color: $bg-colour;
             font-weight: 600;
         }
-        .school-grid{
+
+        .school-grid {
             display: grid;
             grid-template-columns: repeat(1, 2fr);
             gap: 2em;
             padding: 30px;
         }
-}
+    }
 }
 
 
-footer{
+footer {
     padding: 50px;
     border-top: 2px solid $bg-colour;
-    .footer{
+
+    .footer {
         display: flex;
         justify-content: space-around;
         gap: 2em;
     }
-    .flex-items1{
+
+    .flex-items1 {
         display: flex;
         margin-bottom: 20px;
         gap: 1em;
     }
-        .flex-img{
-             border-radius: 50%;
-             width: 90px;
+
+    .flex-img {
+        border-radius: 50%;
+        width: 90px;
     }
-    .wrap-text{
+
+    .wrap-text {
         padding-top: 12px;
-        h1{
+
+        h1 {
             font-size: 32px;
             color: $bg-colour;
             font-weight: 600;
             margin-bottom: 7px;
         }
-        p{
+
+        p {
             font-size: 20px;
             font-weight: 700;
             color: $second-sect-color;
         }
     }
-    .socials{
+
+    .socials {
         display: flex;
         gap: 1em;
-        a{
+
+        a {
             text-decoration: none;
         }
-        .fa-brands{
+
+        .fa-brands {
             font-size: 25px;
             color: black;
         }
     }
-    .second-footer-flex{
-        a{
+
+    .second-footer-flex {
+        a {
             text-decoration: none;
-            h1{
+
+            h1 {
                 font-size: 37px;
                 font-weight: 600;
                 color: black;
                 margin-bottom: 10px;
-                .fa-solid{
+
+                .fa-solid {
                     color: $bg-colour;
                 }
             }
-    
+
         }
     }
-    .contact{
+
+    .contact {
         display: flex;
         gap: 2em;
-        p{
+
+        p {
             color: $second-sect-h1-color;
             font-size: 19px;
             font-weight: 600;
             margin-bottom: 15px;
         }
-        .underline{
+
+        .underline {
             font-size: 20px;
             font-weight: 700;
-            color: #000;
+            color: black;
             position: relative;
         }
     }
-    .underline::after{
+
+    .underline::after {
         content: '';
         width: 0%;
         height: 3px;
@@ -833,8 +870,23 @@ footer{
         bottom: 0;
         transition: width .3s ease-in-out;
     }
-    .underline:hover::after{
+
+    .underline:hover::after {
         width: 100%;
         background-color: $second-sect-color;
+    }
+
+    .fa-solid:hover {
+        animation: move .9s ease-in-out;
+
+        @keyframes move {
+            from {
+                transform: translateX(0px);
+            }
+
+            to {
+            transform: translateX(10px);
+            }
+        }
     }
 }
